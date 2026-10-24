@@ -23,11 +23,12 @@ Reliably collect the documents represented by an InfoCuria search result, save t
 ### 1. Capture the search manifest
 
 1. Use the shared InfoCuria browser page and confirm the query, language (`EN`), date range, sort, and procedure filters.
-2. Export the result CSV and preserve it unchanged.
-3. Parse every row, including duplicate document dates. The manifest key is:
+2. Use InfoCuria's **Download results** control (the toolbar menu shown above the results) and choose the CSV download option. Do not copy visible rows or rely on a browser page save.
+3. Preserve the downloaded CSV unchanged.
+4. Parse every row, including duplicate document dates. The manifest key is:
    `case number + document type + document date + document title/ECLI`.
-4. Record the expected total row count and distinct case count before downloading.
-5. Create a machine-readable manifest containing the CSV row, expected case metadata, and a status field. Do not use folder names as identifiers.
+5. Record the expected total row count and distinct case count before downloading.
+6. Create a machine-readable manifest containing the CSV row, expected case metadata, and a status field. Do not use folder names as identifiers.
 
 ### 2. Resolve document-specific sources
 
