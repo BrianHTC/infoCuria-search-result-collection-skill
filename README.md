@@ -1,0 +1,1 @@
+# infoCuria-search-result-collection-skill
